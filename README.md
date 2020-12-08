@@ -1,10 +1,19 @@
 # Overview
-This project attempts to reproduce the paper [Mining causal topics in text data: iterative topic modeling with time series feedback](https://dl.acm.org/doi/10.1145/2505515.2505612).
+This project attempts to reproduce the paper [Mining causal topics in text data: iterative topic modeling with time series feedback](https://dl.acm.org/doi/10.1145/2505515.2505612). We are only reproducing the first experiment where the authors examine the 2000 U.S. Presidential Election. 
 
-# GitHub structure
-Each folder contains a README file that will explain more about the contents of the directory. 
+The code we implement here can be used to find causal relationships between a textual dataset and non-textual dataset. We prove that by using the idea of causality, we can acheive better topic mining results than the baseline model (i.e. without time series feedback).
+
+Each folder in this repo contains a README file that will explain more about the contents of the directory. 
+
+# Repository Structure
+## Parent Directory
+The top level directory contains the jupyter notebook with our code. There is further documentation in the jupyter notebook.
+
+## Data Folder
 The Data folder provides an overview/methodology of how to access the data and structure it to run our code.
-The Results folder contains images of our results and a short analysis of what it means as well as interactive visualization.
+
+## Results Folder
+The Results folder contains images of our results as well as interactive visualizations in the form of html files. We also provide a README file in this directory that analyzes the differences between our results and the papers and why this may be so.
 
 # Run the code
 We strongly suggest using Google Colab as it reduced the overhead of installing packages. 

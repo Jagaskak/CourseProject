@@ -17,5 +17,23 @@ We found that most decay parameters did improve the causal confidence in our top
 
 We see similar confidence results with different k parameters. Varying the topics each iteration did not seem to improve the confidence, but it did have a better confidence overall for most iterations. There was no number of topics that seemed to have an increasing confidence level.
 
+## Top 5 words for the top 5 topics
+We can see below that the topics seem to be relevant to presedential elections. 
+### Parameterizing k
+1. intervention, humanitarian, trade, theaters, breakup
+2. identity, rats, jews, spells, security -> Antisemitism
+3. women, prescription, sullivan, regulatory, standardized -> Medical Care
+4. surpluses, budget, tax, medicare, russian -> Tax Budget
+5. mcginn, execution, page, repreive, debate
+### Parameterizing decay
+1. copied, lieberman, incorrectly, referred, article
+2. aug, lieberman, drug, abortion, beneficiaries -> Medical Care/Abortion
+3. powell, opening, institute, enterprise, cuba -> Foreign Diplomacy
+4. bushnell, candace, sex, city, fox -> News/Scandals
+5. tax, plan, trillion, social, surplus -> Tax Budget
+
+## Differences in Results from Paper
+We think that the majority of the differences lies in the fact that we are not discounting the word priors exactly like in the paper. The decay parameter represents (the percentage of the previous lambda value that is forgotten when each new document is examined)[https://radimrehurek.com/gensim/models/ldamodel.html]. However the use of mu in the paper is adding a pseudo-word count to the M-iteration in LDA. Essentially, we weight the word prior more at the beginning of generating the model to give words in that topic a better chance of not moving away from that topic, but decrease that weight as the algorithm progresses to allow for more movement of words between topics. On the other hand, decay seems to weight the entire document, and not just the words. We believe that differences in our solution and the one shown in the paper can be attributed to the difference in parameter utilization.
+
 # pyLDAVis
 To see the pyLDAVis interactive visualization, go to [Github's HTML Preview](https://htmlpreview.github.io/) and copy paste the link to the html file. Note that the size of the bubble does not correspond to a higher probability of the topic appearing, it simply means more words were assigned to it. A good topic model will have less overlapping bubbles which corresponds to more distinct topics.
