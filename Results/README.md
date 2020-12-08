@@ -24,12 +24,12 @@ We can see below that the topics seem to be relevant to presedential elections.
 2. identity, rats, jews, spells, security -> Antisemitism
 3. women, prescription, sullivan, regulatory, standardized -> Medical Care
 4. surpluses, budget, tax, medicare, russian -> Tax Budget
-5. mcginn, execution, page, repreive, debate
+5. mcginn, execution, page, repreive, debate -> Death Penalty
 ### Parameterizing decay
 1. copied, lieberman, incorrectly, referred, article
 2. aug, lieberman, drug, abortion, beneficiaries -> Medical Care/Abortion
 3. powell, opening, institute, enterprise, cuba -> Foreign Diplomacy
-4. bushnell, candace, sex, city, fox -> News/Scandals
+4. bushnell, candace, sex, city, fox
 5. tax, plan, trillion, social, surplus -> Tax Budget
 
 ## Differences in Results from Paper
