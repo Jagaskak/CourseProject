@@ -7,7 +7,7 @@ Each folder in this repo contains a README file that will explain more about the
 
 # Repository Structure
 ## Parent Directory
-The top level directory contains the jupyter notebook with our code. There is further documentation in the jupyter notebook.
+The top level directory contains the jupyter notebooks with our code. There is further documentation in the jupyter notebook as well. There is a link to a demo video in the presentation. It will walk you through how to set up your code. 
 
 ## Data Folder
 The Data folder provides an overview/methodology of how to access the data and structure it to run our code.
