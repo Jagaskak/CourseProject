@@ -7,7 +7,9 @@ Each folder in this repo contains a README file that will explain more about the
 
 # Repository Structure
 ## Parent Directory
-The top level directory contains the jupyter notebooks with our code. There is further documentation in the jupyter notebook as well. There is a link to a demo video in the presentation. It will walk you through how to set up your code. 
+The top level directory contains the jupyter notebooks with our code. There is further documentation in the jupyter notebook as well. 
+To view a demo on how to setup the notebook, visit [Example Run for Causal Topic Modeling with Time Series Feedback](https://mediaspace.illinois.edu/media/1_9zxb7xjk).
+To view a run of our code with the graphs generated at the end, visit [CS410_TeamEastToWest_FinalProject](https://mediaspace.illinois.edu/media/1_as47i2bo).
 
 ## Data Folder
 The Data folder provides an overview/methodology of how to access the data and structure it to run our code.
@@ -101,7 +103,7 @@ show_plot(range(1, 6), mu_avg_conf,
 ```
 
 ### Interactive Visualizations
-These visualizations are built using pyLDAvis. The below example also includes an example of how to save the visualization.
+These visualizations are built using pyLDAvis. The below example also includes a line showing how to save the visualization.
 ```
 pyLDAvis.enable_notebook()
 vis = pyLDAvis.gensim.prepare(k_lda_model, corpus, id2word)
